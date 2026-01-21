@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Building2, Package, Stethoscope, Shield } from 'lucide-react';
+import { ArrowRight, Building2, Package, Stethoscope, Shield, Heart } from 'lucide-react';
 import Section from '../components/Section';
 import FAQ from '../components/FAQ';
 import Testimonials from '../components/Testimonials';
@@ -345,11 +345,12 @@ export default function Home() {
             Comprehensive pharmaceutical solutions for healthcare professionals
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
           {[
             { category: 'ANESTHESIA', icon: Stethoscope, count: products.filter(p => p.category === 'ANESTHESIA').length },
             { category: 'PRESCRIPTION_DRUGS', icon: Package, count: products.filter(p => p.category === 'PRESCRIPTION_DRUGS').length },
-            { category: 'MEDICAL_SUPPLIES', icon: Building2, count: products.filter(p => p.category === 'MEDICAL_SUPPLIES').length }
+            { category: 'MEDICAL_SUPPLIES', icon: Building2, count: products.filter(p => p.category === 'MEDICAL_SUPPLIES').length },
+            { category: 'FOOD_SUPPLEMENTS', icon: Heart, count: products.filter(p => p.category === 'FOOD_SUPPLEMENTS').length }
           ].map(({ category, icon: Icon, count }) => (
             <Card key={category} hover>
               <div className="text-center space-y-4">

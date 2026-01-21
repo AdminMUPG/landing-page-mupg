@@ -38,7 +38,7 @@ export interface Product {
   id: string;
   name: string;
   brandCode?: string;
-  category: 'ANESTHESIA' | 'PRESCRIPTION_DRUGS' | 'MEDICAL_SUPPLIES';
+  category: 'ANESTHESIA' | 'PRESCRIPTION_DRUGS' | 'MEDICAL_SUPPLIES' | 'FOOD_SUPPLEMENTS';
 }
 
 export const companyData: Company = {
@@ -171,11 +171,18 @@ export const products: Product[] = [
   { id: '14', name: 'Hospital Supplies: Syringes, Gloves', category: 'MEDICAL_SUPPLIES' },
   // Temporarily hidden
   // { id: '15', name: 'Laboratory and Diagnostics', category: 'MEDICAL_SUPPLIES' },
-  // { id: '16', name: 'Orthopedic Supplies', category: 'MEDICAL_SUPPLIES' }
+  // { id: '16', name: 'Orthopedic Supplies', category: 'MEDICAL_SUPPLIES' },
+  
+  // UPCOMING FOOD SUPPLEMENTS
+  { id: '17', name: 'Mufitek', brandCode: 'MUFITEK', category: 'FOOD_SUPPLEMENTS' },
+  { id: '18', name: 'Ercemed', brandCode: 'ERCEMED-2B', category: 'FOOD_SUPPLEMENTS' },
+  { id: '19', name: 'Ercemed', brandCode: 'ERCEMED-4B', category: 'FOOD_SUPPLEMENTS' },
+  { id: '20', name: 'Mufisitol', brandCode: 'MUFISITOL', category: 'FOOD_SUPPLEMENTS' }
 ];
 
 export const productCategories = {
   ANESTHESIA: 'Anesthesia',
   PRESCRIPTION_DRUGS: 'Prescription Drugs',
-  MEDICAL_SUPPLIES: 'Medical Supplies/Device'
+  MEDICAL_SUPPLIES: 'Medical Supplies/Device',
+  FOOD_SUPPLEMENTS: 'Upcoming Food Supplements'
 };

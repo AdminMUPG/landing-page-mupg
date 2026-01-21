@@ -9,7 +9,7 @@ import Pill from '../components/Pill';
 import { products, productCategories } from '../data/tsp';
 import { getProductImage } from '../utils/imageMap';
 
-type CategoryFilter = 'ALL' | 'ANESTHESIA' | 'PRESCRIPTION_DRUGS' | 'MEDICAL_SUPPLIES';
+type CategoryFilter = 'ALL' | 'ANESTHESIA' | 'PRESCRIPTION_DRUGS' | 'MEDICAL_SUPPLIES' | 'FOOD_SUPPLEMENTS';
 
 export default function Products() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -20,7 +20,7 @@ export default function Products() {
 
   useEffect(() => {
     const categoryParam = searchParams.get('category') as CategoryFilter;
-    if (categoryParam && ['ALL', 'ANESTHESIA', 'PRESCRIPTION_DRUGS', 'MEDICAL_SUPPLIES'].includes(categoryParam)) {
+    if (categoryParam && ['ALL', 'ANESTHESIA', 'PRESCRIPTION_DRUGS', 'MEDICAL_SUPPLIES', 'FOOD_SUPPLEMENTS'].includes(categoryParam)) {
       setActiveCategory(categoryParam);
     }
   }, [searchParams]);
@@ -29,7 +29,8 @@ export default function Products() {
     { id: 'ALL', label: 'All' },
     { id: 'ANESTHESIA', label: 'Anesthesia' },
     { id: 'PRESCRIPTION_DRUGS', label: 'Prescription Drugs' },
-    { id: 'MEDICAL_SUPPLIES', label: 'Medical Supplies/Device' }
+    { id: 'MEDICAL_SUPPLIES', label: 'Medical Supplies/Device' },
+    { id: 'FOOD_SUPPLEMENTS', label: 'Upcoming Food Supplements' }
   ];
 
   const filteredProducts = useMemo(() => {

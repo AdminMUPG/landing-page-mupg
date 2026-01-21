@@ -16,6 +16,12 @@ export const productImageMap: Record<string, string> = {
   RANEXSTAR: '/assets/Prescription Drugs/Tranexamic Acid (RANEXSTAR).png',
   'GADEX-STAR': '/assets/Prescription Drugs/Sugammadex (GADEX-STAR).png',
 
+  // Food Supplements (brand codes)
+  MUFITEK: '/assets/Upcoming Food Supplements/MUFITEK.JPG',
+  'ERCEMED-2B': '/assets/Upcoming Food Supplements/ERCEMED 2billion.JPG',
+  'ERCEMED-4B': '/assets/Upcoming Food Supplements/ERCEMED 4billion.JPG',
+  MUFISITOL: '/assets/Upcoming Food Supplements/MUFISITOL.png',
+
   // Map product names to images for products without brand codes
   'Hydrocortisone (as sodium succinate) 100mg':
     '/assets/Prescription Drugs/Hydrocortisone (as sodium succinate) 100mg, vial.png',
