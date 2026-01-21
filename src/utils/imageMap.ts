@@ -13,7 +13,7 @@ export const productImageMap: Record<string, string> = {
   CETASTAR: '/assets/Pharmaceuticals/For Pain/Copy of CETASTAR.jpg',
   'TAZASTAR-2.25': '/assets/Prescription Drugs/Piperacillin + Tazobactam (TAZASTAR-2.25).png',
   'TAZASTAR-4.5': '/assets/Prescription Drugs/Piperacillin + Tazobactam (TAZASTAR-4.5).png',
-  RANEXSTAR: '/assets/Prescription Drugs/Tranexamic Acid (RANEXSTAR).png',
+  RANEXSTAR: '/assets/Pharmaceuticals/Antifibrinolytic/RANEXSTAR.jpg',
   'GADEX-STAR': '/assets/Prescription Drugs/Sugammadex (GADEX-STAR).png',
 
   // Food Supplements (brand codes)
