@@ -229,19 +229,15 @@ export default function Contact() {
               <div className="space-y-3 text-sm text-slate-600">
                 <div className="flex items-center space-x-2">
                   <Phone className="w-4 h-4 text-primary-600" />
-                  <span>8371-3230</span>
+                  <span>Tel: 02 8371 3230</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="w-4 h-4 text-primary-600" />
-                  <span>0917-102-9691</span>
+                  <span>WhatsApp: 0917-708-7313</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4 text-primary-600" />
-                  <span>medicaunopharmagroup@gmail.com</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Mail className="w-4 h-4 text-primary-600" />
-                  <span>muf.importgrp@gmail.com</span>
+                  <span>medufarma.intl@gmail.com</span>
                 </div>
               </div>
             </Card>
