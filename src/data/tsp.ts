@@ -55,16 +55,22 @@ export const companyData: Company = {
   whoWeAre: 'Medica Uno Farma Int\'l Traders Corp. is a 100% Filipino-owned pharmaceutical company committed to improving healthcare access in the Philippines. We specialize in the importation, distribution, and marketing of branded and generic pharmaceutical products, with a particular focus on anesthesia and prescription medicines. Our extensive network enables us to serve healthcare institutions nationwide—from major hospitals to local government health centers—ensuring that essential medicines reach those who need them most.',
   locations: {
     warehouse: 'TSP Bldg., PH1, B5, Lot 1-2, Amityville Subd., San Jose, Rodriguez, Rizal',
-    satelliteOffice: 'Quezon City, Metro Manila'
+    satelliteOffice: 'The Regalia Towers 407C, 150 P Tuazon Blvd, Cubao, Quezon City'
   },
   groupOfCompanies: [
     {
       name: 'Medica Uno Farma Int\'l Traders Corp.',
-      description: 'Importation and distribution of generic pharmaceuticals, food supplements, and medical devices'
+      description:
+        'Licensed pharmaceutical importing company committed to providing safe, high-quality, and affordable medicines to the local market. We source our products from reputable, compliant manufacturers and ensure strict adherence to regulatory standards, quality control, and proper storage and distribution practices. Our goal is to support healthcare providers and patients by ensuring a reliable supply of essential medicines.'
     },
     {
       name: 'Twostar Pharmaceutical Trading',
-      description: 'Distribution and marketing of affordable branded/generic pharma products with focus on anesthesia and prescription medicines'
+      description:
+        'Company engaged in ethical pharmaceutical marketing, operating in compliance with FDA regulations and applicable industry codes of conduct. Committed to responsible promotion, accurate product information, and professional engagement with healthcare stakeholders to support safe and effective patient care.'
+    },
+    {
+      name: 'Biomed International Traders Inc.',
+      description: 'Importation and distribution of generic pharmaceuticals, food supplements, and medical devices'
     }
   ],
   services: [

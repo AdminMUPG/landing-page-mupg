@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { companyData, products } from './tsp';
+import { products } from './tsp';
 
 interface BentoItem {
   id: string;
@@ -206,7 +206,10 @@ export const createTwostarBentoItems = (): BentoItem[] => {
       description: (
         <div className="mt-2 flex flex-col gap-1.5 text-sm text-slate-600">
           <span className="px-2 py-1 rounded-md bg-slate-100 w-fit">
-            Wholesale
+            Importer
+          </span>
+          <span className="px-2 py-1 rounded-md bg-slate-100 w-fit">
+            Wholesale and Distribution
           </span>
           <span className="px-2 py-1 rounded-md bg-slate-100 w-fit">
             Ethical Marketing
@@ -262,9 +265,14 @@ export const createTwostarBentoItems = (): BentoItem[] => {
       title: 'TSP Group',
       description: (
         <div className="space-y-1 text-sm text-slate-600">
-          <div className="text-5xl font-bold text-slate-900 leading-none">2</div>
+          <div className="text-5xl font-bold text-slate-900 leading-none">3</div>
           <p className="mt-2 text-sm text-slate-600">Companies</p>
-          <p className="text-xs text-slate-500">TSP + Medica Uno Farma</p>
+          <p className="text-xs text-slate-500">
+            TSP + Medica Uno Farma + Biomed
+          </p>
+          <p className="text-xs text-slate-500 mt-2">
+            Importation and distribution of generic pharmaceuticals, food supplements, and medical devices
+          </p>
         </div>
       )
     }
