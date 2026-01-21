@@ -1,0 +1,224 @@
+:root {
+  --hue: 40;
+  --sat: 85%;
+  --white: hsl(0, 0%, 100%);
+  /* TSP brand colors */
+  --gold: #e6a91e;
+  --navy: #0f253a;
+  --crimson: #b01e1e;
+  --purple-primary: rgba(230, 169, 30, 1); /* use gold for primary glow */
+  --purple-glow: rgba(230, 169, 30, 0.25);
+  --purple-border: rgba(176, 30, 30, 0.9); /* crimson accent */
+  --border-color: rgba(176, 30, 30, 0.7);
+  --background-dark: #0f253a; /* navy background */
+  color-scheme: light dark;
+}
+
+.card-grid {
+  display: grid;
+  gap: 0.5em;
+  padding: 0.75em;
+  max-width: 54em;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+
+.magic-bento-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  aspect-ratio: 4/3;
+  min-height: 200px;
+  width: 100%;
+  max-width: 100%;
+  padding: 1.25em;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  font-weight: 300;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  --glow-x: 50%;
+  --glow-y: 50%;
+  --glow-intensity: 0;
+  --glow-radius: 200px;
+}
+
+
+.magic-bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 37, 58, 0.15);
+  border-color: #E6A91E;
+}
+
+.magic-bento-card__header,
+.magic-bento-card__content {
+  display: flex;
+  position: relative;
+  color: #0F253A;
+  z-index: 2;
+}
+
+.magic-bento-card__header {
+  gap: 0.75em;
+  justify-content: space-between;
+}
+
+.magic-bento-card__content {
+  flex-direction: column;
+}
+
+.magic-bento-card__label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #E6A91E;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.magic-bento-card__title,
+.magic-bento-card__description {
+  --clamp-title: 1;
+  --clamp-desc: 2;
+}
+
+.magic-bento-card__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 0.5em;
+  color: #0F253A;
+  line-height: 1.2;
+}
+
+.magic-bento-card__description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1e293b;
+  opacity: 0.95;
+}
+
+
+.magic-bento-card__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin: 0.5em 0;
+  position: relative;
+  z-index: 2;
+}
+
+.magic-bento-card__stat-number {
+  font-size: 3em;
+  font-weight: 700;
+  color: #0F253A;
+  line-height: 1;
+}
+
+.magic-bento-card__stat-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: flex-start;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.magic-bento-card__stat-details span {
+  padding: 0.25em 0.5em;
+  background: #f1f5f9;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.magic-bento-card__networks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0.5em 0;
+  position: relative;
+  z-index: 2;
+}
+
+.magic-bento-card__network-tag {
+  font-size: 11px;
+  padding: 0.25em 0.5em;
+  background: #f1f5f9;
+  border-radius: 6px;
+  color: #0F253A;
+  font-weight: 500;
+}
+
+.magic-bento-card__checkmark {
+  font-size: 3em;
+  color: #E6A91E;
+  text-align: left;
+  margin: 0.5em 0;
+  position: relative;
+  z-index: 2;
+}
+
+.magic-bento-card__stat-pill {
+  font-size: 11px;
+  font-weight: 500;
+  color: #0F253A;
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 0.25em 0.75em;
+  align-self: flex-end;
+  margin-top: 0.5em;
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__title,
+.magic-bento-card--text-autohide .magic-bento-card__description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__title {
+  -webkit-line-clamp: var(--clamp-title);
+  line-clamp: var(--clamp-title);
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__description {
+  -webkit-line-clamp: var(--clamp-desc);
+  line-clamp: var(--clamp-desc);
+}
+
+@media (max-width: 599px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5em;
+  }
+
+  .magic-bento-card {
+    width: 100%;
+    min-height: 180px;
+  }
+}
+
+@media (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Highlight tile: Product Portfolio (4th card) spans larger area */
+  .magic-bento-card:nth-child(4) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+/* Simple layout only – glow, particles, and spotlight removed */
