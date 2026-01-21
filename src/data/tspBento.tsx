@@ -14,8 +14,7 @@ interface BentoItem {
 }
 
 export const createTwostarBentoItems = (): BentoItem[] => {
-  const anesthesiaCount = products.filter(p => p.category === 'ANESTHESIA').length;
-  const prescriptionCount = products.filter(p => p.category === 'PRESCRIPTION_DRUGS').length;
+  const pharmaCount = products.filter(p => p.category === 'PHARMACEUTICALS').length;
   const suppliesCount = products.filter(p => p.category === 'MEDICAL_SUPPLIES').length;
 
   const networkTypes = [
@@ -114,8 +113,7 @@ export const createTwostarBentoItems = (): BentoItem[] => {
 
           {/* Mini category breakdown */}
           <div className="flex flex-wrap gap-1.5 text-xs">
-            <span className="px-2 py-1 rounded-md bg-slate-100">{anesthesiaCount} Anesthesia</span>
-            <span className="px-2 py-1 rounded-md bg-slate-100">{prescriptionCount} Prescription</span>
+            <span className="px-2 py-1 rounded-md bg-slate-100">{pharmaCount} Pharmaceuticals</span>
             <span className="px-2 py-1 rounded-md bg-slate-100">{suppliesCount} Supplies</span>
           </div>
 
@@ -164,9 +162,9 @@ export const createTwostarBentoItems = (): BentoItem[] => {
           <div className="text-5xl font-bold text-slate-900 leading-none">3</div>
           <p className="mt-2 text-sm text-slate-600">Core categories</p>
           <div className="mt-3 flex flex-wrap gap-2 text-xs">
-            <span className="px-2 py-1 rounded-md bg-slate-100">Anesthesia</span>
-            <span className="px-2 py-1 rounded-md bg-slate-100">Prescription</span>
-            <span className="px-2 py-1 rounded-md bg-slate-100">Supplies</span>
+            <span className="px-2 py-1 rounded-md bg-slate-100">Pharmaceuticals</span>
+            <span className="px-2 py-1 rounded-md bg-slate-100">Medical Supplies/Device</span>
+            <span className="px-2 py-1 rounded-md bg-slate-100">Upcoming Food Supplements</span>
           </div>
         </div>
       )
