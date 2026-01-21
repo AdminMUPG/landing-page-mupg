@@ -1,6 +1,6 @@
 # Twostar Pharmaceutical Trading - Landing Page
 
-A modern, responsive React website for Twostar Pharmaceutical Trading (TSP), a Filipino-owned pharmaceutical company.
+A modern, responsive React website for Twostar Pharmaceutical Trading (TSP), a Filipino-owned pharmaceutical company..
 
 ## Tech Stack
 
