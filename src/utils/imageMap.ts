@@ -36,7 +36,7 @@ export const defaultProductImage = '/assets/Anesthesia/Propofol (XYFOL).png';
 
 // Other images
 export const imagePaths = {
-  logo: '/assets/Logo/TSP-Official-LOGO.png',
+  logo: '/assets/Logo/MUF_LOGO__UPDATED_-removebg-preview.png',
   hero: '/assets/Group Picture/Pic 1.jpg',
   warehouse: '/assets/Warehouse and Office/Pic 2.jpg',
   warehouseAlt: '/assets/Warehouse and Office/Regalia.jpg',

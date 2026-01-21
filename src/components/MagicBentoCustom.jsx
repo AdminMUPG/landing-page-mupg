@@ -5,8 +5,8 @@ import { companyData, products } from '../data/tsp';
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
-// TSP brand gold for glow (#E6A91E)
-const DEFAULT_GLOW_COLOR = '230, 169, 30';
+// Medica Uno primary purple for glow (#6A63B6)
+const DEFAULT_GLOW_COLOR = '106, 99, 182';
 const MOBILE_BREAKPOINT = 768;
 
 const getCardData = () => {

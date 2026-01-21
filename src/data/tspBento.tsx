@@ -73,7 +73,7 @@ export const createTwostarBentoItems = (): BentoItem[] => {
       ),
       description: (
         <div>
-          <div className="text-5xl font-bold text-slate-900 leading-none">{totalPartners}+</div>
+          <div className="text-5xl font-bold text-slate-900 leading-none">400+</div>
           <p className="mt-2 text-sm text-slate-600">
             Active healthcare partners
           </p>
@@ -139,7 +139,7 @@ export const createTwostarBentoItems = (): BentoItem[] => {
           <div className="pt-2">
             <Link
               to="/products"
-              className="inline-flex items-center text-sm font-semibold text-[#0F253A] hover:underline"
+              className="inline-flex items-center text-sm font-semibold text-[#6A63B6] hover:underline"
             >
               View Products →
             </Link>

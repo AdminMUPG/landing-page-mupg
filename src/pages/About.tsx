@@ -12,7 +12,7 @@ export default function About() {
       <Section className="bg-gradient-to-br from-primary-50 via-blue-50 to-sky-50">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            About Twostar Pharmaceutical Trading
+            About Medica Uno Farma Int&apos;l Traders Corp.
           </h1>
           <p className="text-lg text-slate-600">
             {companyData.description}
@@ -27,7 +27,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Company Overview</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-slate-600 leading-relaxed mb-4">
-              Twostar Pharmaceutical Trading (TSP) is a Filipino-owned pharmaceutical company dedicated to making quality healthcare accessible across the Philippines. We specialize in the distribution, marketing, and importation of branded and generic pharmaceutical products, with a particular focus on anesthesia and prescription medicines.
+              Medica Uno Farma Int&apos;l Traders Corp. is a Filipino-owned pharmaceutical company dedicated to making quality healthcare accessible across the Philippines. We specialize in the importation, distribution, and marketing of branded and generic pharmaceutical products, with a particular focus on anesthesia and prescription medicines.
             </p>
             <p className="text-slate-600 leading-relaxed">
               Our commitment to excellence and our extensive network of partners enable us to serve healthcare institutions, from major hospitals to local government health centers, ensuring that essential medicines reach those who need them most.
@@ -41,7 +41,7 @@ export default function About() {
         <div className="max-w-5xl mx-auto space-y-10">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
-              The People Behind Twostar
+              The People Behind Medica Uno
             </h2>
             <p className="text-slate-600">
               A glimpse of our team and the environments where we work and serve our partners.
@@ -149,7 +149,7 @@ export default function About() {
                   <MapPin className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Warehouse</h3>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Main Office with Warehouse</h3>
                   <p className="text-slate-600">{companyData.locations.warehouse}</p>
                 </div>
               </div>
@@ -185,16 +185,16 @@ export default function About() {
         <div className="max-w-4xl mx-auto space-y-6">
           {companyData.timeline.map((item, index) => (
             <Card key={index} className="relative pl-12">
-              <div className="absolute left-6 top-6 w-3 h-3 bg-[#E6A91E] rounded-full border-4 border-white shadow-lg"></div>
+              <div className="absolute left-6 top-6 w-3 h-3 bg-[#6A63B6] rounded-full border-4 border-white shadow-lg"></div>
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-[#0F253A] rounded-xl flex items-center justify-center">
+                  <div className="w-16 h-16 bg-[#6A63B6] rounded-xl flex items-center justify-center">
                     <Calendar className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <h3 className="text-2xl font-bold text-[#E6A91E]">{item.year}</h3>
+                    <h3 className="text-2xl font-bold text-[#6A63B6]">{item.year}</h3>
                   </div>
                   <p className="text-slate-600 leading-relaxed">{item.event}</p>
                 </div>
@@ -207,7 +207,7 @@ export default function About() {
       {/* Future Plans */}
       <Section>
         <div className="text-center mb-12">
-          <div className="w-16 h-16 bg-gradient-to-br from-[#0F253A] to-[#B01E1E] rounded-xl flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-gradient-to-br from-[#6A63B6] to-[#18B7A5] rounded-xl flex items-center justify-center mx-auto mb-4">
             <Target className="w-8 h-8 text-white" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Future Plans</h2>
@@ -217,7 +217,7 @@ export default function About() {
           <div className="space-y-4">
             {companyData.futurePlans.map((plan, index) => (
               <Card key={index} className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-[#E6A91E] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-6 h-6 text-[#6A63B6] flex-shrink-0 mt-0.5" />
                 <p className="text-slate-700 text-lg">{plan}</p>
               </Card>
             ))}

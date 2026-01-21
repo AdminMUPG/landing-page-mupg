@@ -136,7 +136,7 @@ export default function Careers() {
               return (
                 <Card key={index} hover>
                   <div className="text-center space-y-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-[#0F253A] to-[#B01E1E] rounded-xl flex items-center justify-center mx-auto">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[#6A63B6] to-[#18B7A5] rounded-xl flex items-center justify-center mx-auto">
                       <Icon className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900">{value}</h3>
@@ -295,7 +295,7 @@ export default function Careers() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#0F253A] text-white px-6 py-3 rounded-full hover:bg-[#1a3a52] transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full bg-[#6A63B6] text-white px-6 py-3 rounded-full hover:bg-[#554ea0] transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {isSubmitting ? 'Sending...' : 'Send Application'}
                 {!isSubmitting && <Send className="w-5 h-5" />}
@@ -303,7 +303,7 @@ export default function Careers() {
 
               <p className="text-sm text-slate-500 text-center">
                 Or email us directly at:{' '}
-                <a href="mailto:careers@twostarpharma.com" className="text-[#0F253A] hover:underline font-medium">
+                <a href="mailto:careers@twostarpharma.com" className="text-[#6A63B6] hover:underline font-medium">
                   careers@twostarpharma.com
                 </a>
               </p>

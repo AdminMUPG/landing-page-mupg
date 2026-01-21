@@ -42,29 +42,29 @@ export interface Product {
 }
 
 export const companyData: Company = {
-  name: 'Twostar Pharmaceutical Trading',
-  description: 'Filipino-owned pharmaceutical company in the Philippines focused on distribution, marketing, and importation of branded and generic pharmaceutical products including anesthesia and prescription medicines.',
+  name: 'Medica Uno Farma Int\'l Traders Corp.',
+  description: 'Filipino-owned pharmaceutical company in the Philippines focused on the importation, distribution, and marketing of branded and generic pharmaceutical products including anesthesia and prescription medicines.',
   motto: 'Delivering on a Vision of Accessible Wellness',
-  mission: 'To empower Filipino patients and healthcare professionals by delivering consistent access to high-quality, affordable pharmaceutical products that support effective and sustainable treatment outcomes.',
+  mission: 'To empower Filipino patients and healthcare professionals by delivering consistent access to high-quality, affordable pharmaceutical products through trusted importation and distribution channels that support effective and sustainable treatment outcomes.',
   vision: 'To be a trusted leader in the Philippine pharmaceutical industry—enhancing the quality of life of Filipinos through accessible and reliable medicines, and fostering long-term partnerships with medical professionals built on integrity, loyalty, and shared success.',
   coreValues: [
     'Transparency & Integrity',
     'Service & Reliability',
     'Passion & Persistence'
   ],
-  whoWeAre: 'Twostar Pharmaceutical Trading (TSP) is a 100% Filipino-owned pharmaceutical company committed to improving healthcare access in the Philippines. We specialize in the distribution, marketing, and importation of branded and generic pharmaceutical products, with a particular focus on anesthesia and prescription medicines. Our extensive network enables us to serve healthcare institutions nationwide—from major hospitals to local government health centers—ensuring that essential medicines reach those who need them most.',
+  whoWeAre: 'Medica Uno Farma Int\'l Traders Corp. is a 100% Filipino-owned pharmaceutical company committed to improving healthcare access in the Philippines. We specialize in the importation, distribution, and marketing of branded and generic pharmaceutical products, with a particular focus on anesthesia and prescription medicines. Our extensive network enables us to serve healthcare institutions nationwide—from major hospitals to local government health centers—ensuring that essential medicines reach those who need them most.',
   locations: {
-    warehouse: 'Rizal',
-    satelliteOffice: 'Quezon City'
+    warehouse: 'Rodriguez, Rizal',
+    satelliteOffice: 'TSP Bldg., PH1, B5, Lot 1-2, Amityville Subd., San Jose, Rodriguez, Rizal'
   },
   groupOfCompanies: [
     {
-      name: 'Twostar Pharmaceutical Trading',
-      description: 'Distribution and marketing of affordable branded/generic pharma products; focus on anesthesia and prescription medicines'
+      name: 'Medica Uno Farma Int\'l Traders Corp.',
+      description: 'Importation and distribution of generic pharmaceuticals, food supplements, and medical devices'
     },
     {
-      name: 'Medica Uno Farma Int\'l Traders Corp.',
-      description: 'Importation and distribution of generic pharmaceuticals, food supplements, medical devices'
+      name: 'Twostar Pharmaceutical Trading',
+      description: 'Distribution and marketing of affordable branded/generic pharma products with focus on anesthesia and prescription medicines'
     }
   ],
   services: [
@@ -133,7 +133,7 @@ export const companyData: Company = {
     },
     {
       year: '2022',
-      event: 'Medica Uno Farma (MUF) established, expanding operations to include importation and distribution'
+      event: 'Medica Uno Farma Int\'l Traders Corp. (MUF) established, expanding operations to include importation and distribution'
     }
   ],
   futurePlans: [

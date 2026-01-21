@@ -29,7 +29,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                   className="w-12 h-12 rounded-full object-cover"
                 />
               ) : (
-                <div className="w-12 h-12 rounded-full bg-[#0F253A] flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-[#6A63B6] flex items-center justify-center">
                   <span className="text-white font-semibold text-sm">
                     {testimonial.name.charAt(0)}
                   </span>
@@ -42,7 +42,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                 </p>
               </div>
             </div>
-            <div className="text-4xl text-[#E6A91E] mb-2">❝</div>
+            <div className="text-4xl text-[#6A63B6] mb-2">❝</div>
             <p className="text-slate-700 leading-relaxed mb-4">
               {testimonial.text}
             </p>
@@ -51,7 +51,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                 href={testimonial.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0F253A] hover:text-[#1a3a52] font-medium text-sm"
+                className="text-[#6A63B6] hover:text-[#554ea0] font-medium text-sm"
               >
                 View More →
               </a>

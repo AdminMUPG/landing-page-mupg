@@ -1,16 +1,15 @@
 :root {
-  --hue: 40;
+  --hue: 260;
   --sat: 85%;
   --white: hsl(0, 0%, 100%);
-  /* TSP brand colors */
-  --gold: #e6a91e;
-  --navy: #0f253a;
-  --crimson: #b01e1e;
-  --purple-primary: rgba(230, 169, 30, 1); /* use gold for primary glow */
-  --purple-glow: rgba(230, 169, 30, 0.25);
-  --purple-border: rgba(176, 30, 30, 0.9); /* crimson accent */
-  --border-color: rgba(176, 30, 30, 0.7);
-  --background-dark: #0f253a; /* navy background */
+  /* Medica Uno brand colors */
+  --primary-purple: #6a63b6;
+  --accent-teal: #18b7a5;
+  --purple-primary: rgba(106, 99, 182, 1);
+  --purple-glow: rgba(106, 99, 182, 0.25);
+  --purple-border: rgba(24, 183, 165, 0.9);
+  --border-color: rgba(24, 183, 165, 0.7);
+  --background-dark: #17153b;
   color-scheme: light dark;
 }
 
@@ -49,15 +48,15 @@
 
 .magic-bento-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(15, 37, 58, 0.15);
-  border-color: #E6A91E;
+  box-shadow: 0 12px 30px rgba(23, 21, 59, 0.18);
+  border-color: #6A63B6;
 }
 
 .magic-bento-card__header,
 .magic-bento-card__content {
   display: flex;
   position: relative;
-  color: #0F253A;
+  color: #17153b;
   z-index: 2;
 }
 
@@ -73,7 +72,7 @@
 .magic-bento-card__label {
   font-size: 11px;
   font-weight: 600;
-  color: #E6A91E;
+  color: #6A63B6;
   text-transform: uppercase;
   letter-spacing: 0.18em;
 }
@@ -88,7 +87,7 @@
   font-weight: 700;
   font-size: 24px;
   margin: 0 0 0.5em;
-  color: #0F253A;
+  color: #17153b;
   line-height: 1.2;
 }
 
@@ -113,7 +112,7 @@
 .magic-bento-card__stat-number {
   font-size: 3em;
   font-weight: 700;
-  color: #0F253A;
+  color: #17153b;
   line-height: 1;
 }
 
@@ -147,13 +146,13 @@
   padding: 0.25em 0.5em;
   background: #f1f5f9;
   border-radius: 6px;
-  color: #0F253A;
+  color: #17153b;
   font-weight: 500;
 }
 
 .magic-bento-card__checkmark {
   font-size: 3em;
-  color: #E6A91E;
+  color: #6A63B6;
   text-align: left;
   margin: 0.5em 0;
   position: relative;
@@ -192,14 +191,15 @@
 @media (max-width: 599px) {
   .card-grid {
     grid-template-columns: 1fr;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 0.5em;
   }
 
   .magic-bento-card {
     width: 100%;
-    min-height: 180px;
+    min-height: 0;
+    aspect-ratio: auto;
   }
 }
 

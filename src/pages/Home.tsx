@@ -15,8 +15,8 @@ export default function Home() {
   // FAQ data
   const faqItems = [
     {
-      question: 'What services does Twostar Pharmaceutical offer?',
-      answer: 'We specialize in wholesale distribution and ethical marketing of pharmaceutical products including anesthesia medicines, prescription drugs, and medical supplies. Our services include efficient distribution networks, product support, and building strong relationships with healthcare professionals across the Philippines.'
+      question: 'What services does Medica Uno offer?',
+      answer: 'We specialize in wholesale distribution, importation, and ethical marketing of pharmaceutical products including anesthesia medicines, prescription drugs, and medical supplies. Our services include efficient distribution networks, product support, and building strong relationships with healthcare professionals across the Philippines.'
     },
     {
       question: 'Do you serve both private and government healthcare institutions?',
@@ -28,7 +28,7 @@ export default function Home() {
     },
     {
       question: 'Where are your facilities located?',
-      answer: 'We operate from two strategic locations: our main warehouse in Rizal and a satellite office in Quezon City. This dual-location setup allows us to efficiently serve healthcare institutions across the Philippines.'
+      answer: 'We operate from two strategic locations: our main office with warehouse in Rodriguez, Rizal and a satellite office in Amityville Subd., San Jose, Rodriguez, Rizal. This dual-location setup allows us to efficiently serve healthcare institutions across the Philippines.'
     },
     {
       question: 'How can I get started with my order?',
@@ -120,16 +120,16 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center pt-24 pb-20 bg-white overflow-hidden">
         {/* Subtle background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-[#E6A91E]/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-[#0F253A]/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-[#6A63B6]/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-[#18B7A5]/10 rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
           <div className="text-center space-y-8">
             {/* Badge/Announcement */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm font-medium">
-              <span className="w-2 h-2 bg-[#E6A91E] rounded-full animate-pulse"></span>
-              Filipino-owned pharmaceutical company
+              <span className="w-2 h-2 bg-[#6A63B6] rounded-full animate-pulse"></span>
+              Filipino-owned pharmaceutical import and distribution company
             </div>
 
             {/* Main Headline */}
@@ -137,13 +137,13 @@ export default function Home() {
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-slate-900 leading-[1.1] tracking-tight">
                 Delivering on a Vision of
                 <br />
-                <span className="bg-gradient-to-r from-[#0F253A] via-[#B01E1E] to-[#E6A91E] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#6A63B6] via-[#18B7A5] to-[#6A63B6] bg-clip-text text-transparent">
                   Accessible Wellness
                 </span>
               </h1>
               
               <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
-                Leading pharmaceutical distributor specializing in anesthesia, prescription medicines, and medical supplies for healthcare institutions across the Philippines
+                Leading pharmaceutical importer and distributor specializing in anesthesia, prescription medicines, and medical supplies for healthcare institutions across the Philippines
               </p>
             </div>
 
@@ -151,14 +151,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <Link
                 to="/products"
-                className="group inline-flex items-center gap-2 bg-[#0F253A] text-white px-8 py-4 rounded-lg hover:bg-[#1a3a52] transition-all duration-200 font-medium text-lg shadow-lg hover:shadow-xl"
+                className="group inline-flex items-center gap-2 bg-[#6A63B6] text-white px-8 py-4 rounded-lg hover:bg-[#554ea0] transition-all duration-200 font-medium text-lg shadow-lg hover:shadow-xl"
               >
                 View our products
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 bg-white text-[#0F253A] px-8 py-4 rounded-lg border-2 border-slate-200 hover:border-[#0F253A] transition-all duration-200 font-medium text-lg"
+                className="inline-flex items-center gap-2 bg-white text-[#6A63B6] px-8 py-4 rounded-lg border-2 border-slate-200 hover:border-[#6A63B6] transition-all duration-200 font-medium text-lg"
               >
                 Get a quote
               </Link>
@@ -203,7 +203,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
             A Group of
             <br />
-            <span className="bg-gradient-to-r from-[#0F253A] via-[#B01E1E] to-[#E6A91E] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#6A63B6] via-[#18B7A5] to-[#6A63B6] bg-clip-text text-transparent">
               Companies
             </span>
           </h2>
@@ -212,15 +212,15 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-10 md:gap-16">
             <div className="flex items-center justify-center">
               <img 
-                src="/assets/Logo/Logo 2.png" 
-                alt="Twostar Pharmaceutical Trading" 
+                src="/assets/Logo/MUF_LOGO__UPDATED_-removebg-preview.png" 
+                alt="Medica Uno Farma" 
                 className="h-28 md:h-36 w-auto object-contain"
               />
             </div>
             <div className="flex items-center justify-center">
               <img 
-                src="/assets/Logo/MUF_LOGO__UPDATED_-removebg-preview.png" 
-                alt="Medica Uno Farma" 
+                src="/assets/Logo/Logo 2.png" 
+                alt="Twostar Pharmaceutical Trading" 
                 className="h-28 md:h-36 w-auto object-contain"
               />
             </div>
@@ -239,9 +239,9 @@ export default function Home() {
       <Section>
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-[1.1] tracking-tight">
-            TwoStar Pharmaceutical in a
+            Medica Uno in a
             <br />
-            <span className="bg-gradient-to-r from-[#0F253A] via-[#B01E1E] to-[#E6A91E] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#6A63B6] via-[#18B7A5] to-[#6A63B6] bg-clip-text text-transparent">
               Glance
             </span>
           </h2>
@@ -294,7 +294,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
           <Card hover>
             <div className="space-y-4">
-              <div className="w-12 h-12 bg-[#0F253A] rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#6A63B6] rounded-xl flex items-center justify-center">
                 <Package className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900">Wholesale and Distribution</h3>
@@ -305,7 +305,7 @@ export default function Home() {
           </Card>
           <Card hover>
             <div className="space-y-4">
-              <div className="w-12 h-12 bg-[#B01E1E] rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#18B7A5] rounded-xl flex items-center justify-center">
                 <Stethoscope className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900">Ethical Marketing</h3>
@@ -328,7 +328,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
           {companyData.certifications.map((cert, index) => (
             <Card key={index} className="flex items-center gap-3 px-6 py-4">
-              <Shield className="w-6 h-6 text-[#E6A91E]" />
+              <Shield className="w-6 h-6 text-[#6A63B6]" />
               <span className="font-semibold text-slate-900">{cert}</span>
             </Card>
           ))}
@@ -354,7 +354,7 @@ export default function Home() {
           ].map(({ category, icon: Icon, count }) => (
             <Card key={category} hover>
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#0F253A] to-[#B01E1E] rounded-xl flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#6A63B6] to-[#18B7A5] rounded-xl flex items-center justify-center mx-auto">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900">
@@ -393,11 +393,11 @@ export default function Home() {
             <div className="space-y-4">
               <ImagePlaceholder
                 src={imagePaths.warehouse}
-                alt="Warehouse in Rizal"
+                alt="Main office with warehouse in Rodriguez, Rizal"
                 aspectRatio="video"
               />
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Warehouse</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Main Office with Warehouse</h3>
                 <p className="text-slate-600">{companyData.locations.warehouse}</p>
               </div>
             </div>

@@ -34,8 +34,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center space-x-2 md:space-x-3">
             <img 
-              src="/assets/Logo/TSP-Official-LOGO.png" 
-              alt="Twostar Pharmaceutical Logo" 
+              src="/assets/Logo/MUF_LOGO__UPDATED_-removebg-preview.png" 
+              alt="Medica Uno Logo" 
               className="h-8 md:h-10 w-auto"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
@@ -45,11 +45,11 @@ export default function Navbar() {
                 }
               }}
             />
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-[#0F253A] rounded-lg flex items-center justify-center hidden">
-              <span className="text-white font-bold text-sm md:text-xl">TSP</span>
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-[#6A63B6] rounded-lg flex items-center justify-center hidden">
+              <span className="text-white font-bold text-sm md:text-xl">MU</span>
             </div>
-            <span className={`font-bold text-lg md:text-xl ${isScrolled ? 'text-[#0F253A]' : 'text-white'}`}>
-              TWOSTAR
+            <span className={`font-bold text-lg md:text-xl ${isScrolled ? 'text-[#6A63B6]' : 'text-white'}`}>
+              MEDICA UNO
             </span>
           </Link>
 
@@ -64,10 +64,10 @@ export default function Navbar() {
                   ${
                     location.pathname === link.path
                       ? isScrolled
-                        ? 'text-[#0F253A]'
+                        ? 'text-[#6A63B6]'
                         : 'text-white'
                       : isScrolled
-                      ? 'text-slate-700 hover:text-[#0F253A]'
+                      ? 'text-slate-700 hover:text-[#6A63B6]'
                       : 'text-white/90 hover:text-white'
                   }
                 `}
@@ -77,7 +77,7 @@ export default function Navbar() {
             ))}
             <Link
               to="/contact"
-              className="bg-[#0F253A] text-white px-5 py-2 rounded-full hover:bg-[#1a3a52] transition-colors font-medium text-sm"
+              className="bg-[#6A63B6] text-white px-5 py-2 rounded-full hover:bg-[#554ea0] transition-colors font-medium text-sm"
             >
               Get a quote
             </Link>
@@ -106,8 +106,8 @@ export default function Navbar() {
                 to={link.path}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`
-                  block font-medium text-slate-700 hover:text-[#0F253A]
-                  ${location.pathname === link.path ? 'text-[#0F253A]' : ''}
+                  block font-medium text-slate-700 hover:text-[#6A63B6]
+                  ${location.pathname === link.path ? 'text-[#6A63B6]' : ''}
                 `}
               >
                 {link.label}
@@ -116,7 +116,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block bg-[#0F253A] text-white px-5 py-2 rounded-full hover:bg-[#1a3a52] transition-colors font-medium text-center"
+              className="block bg-[#6A63B6] text-white px-5 py-2 rounded-full hover:bg-[#554ea0] transition-colors font-medium text-center"
             >
               Get a quote
             </Link>

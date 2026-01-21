@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { MapPin, Mail, Send } from 'lucide-react';
+import { MapPin, Mail, Send, Phone } from 'lucide-react';
 import Section from '../components/Section';
 import Card from '../components/Card';
 import ImagePlaceholder from '../components/ImagePlaceholder';
@@ -202,7 +202,7 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 mb-1">Warehouse</h3>
+                    <h3 className="font-bold text-slate-900 mb-1">Main Office with Warehouse</h3>
                     <p className="text-slate-600">{companyData.locations.warehouse}</p>
                   </div>
                 </div>
@@ -213,7 +213,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 mb-1">Satellite Office</h3>
-                    <p className="text-slate-600">{companyData.locations.satelliteOffice}</p>
+                    <p className="text-slate-600 whitespace-pre-line">
+                      {companyData.locations.satelliteOffice}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -226,8 +228,20 @@ export default function Contact() {
               </p>
               <div className="space-y-3 text-sm text-slate-600">
                 <div className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4 text-primary-600" />
+                  <span>8371-3230</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4 text-primary-600" />
+                  <span>0917-102-9691</span>
+                </div>
+                <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4 text-primary-600" />
-                  <span>info@twostarpharma.com</span>
+                  <span>twostarpharmatrading@gmail.com</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-primary-600" />
+                  <span>muf.importgrp@gmail.com</span>
                 </div>
               </div>
             </Card>
