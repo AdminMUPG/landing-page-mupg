@@ -13,7 +13,6 @@ type CategoryFilter = 'ALL' | 'ANESTHESIA' | 'PRESCRIPTION_DRUGS' | 'MEDICAL_SUP
 
 export default function Products() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const location = useLocation();
   const initialCategory = (searchParams.get('category') as CategoryFilter) || 'ALL';
   
   const [searchQuery, setSearchQuery] = useState('');
