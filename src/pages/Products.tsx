@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
-import { useSearchParams, Link, useLocation } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import { Search, ArrowRight } from 'lucide-react';
 import Section from '../components/Section';
 import Card from '../components/Card';

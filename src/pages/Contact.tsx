@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { MapPin, Mail, Phone, Send } from 'lucide-react';
+import { MapPin, Mail, Send } from 'lucide-react';
 import Section from '../components/Section';
 import Card from '../components/Card';
 import ImagePlaceholder from '../components/ImagePlaceholder';
