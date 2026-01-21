@@ -9,8 +9,8 @@ export const productImageMap: Record<string, string> = {
   SEVOTANE: '/assets/Anesthesia/Sevoflurane (SEVOTANE).png',
 
   // Prescription drugs (brand codes)
-  NOREPHSTAR: '/assets/Prescription Drugs/Norepinephrine.png',
-  CETASTAR: '/assets/Prescription Drugs/Paracetamol.png',
+  NOREPHSTAR: '/assets/Pharmaceuticals/Emergency Medicine/Copy of NOREPHSTAR AMPULE.PNG',
+  CETASTAR: '/assets/Pharmaceuticals/For Pain/Copy of CETASTAR.jpg',
   'TAZASTAR-2.25': '/assets/Prescription Drugs/Piperacillin + Tazobactam (TAZASTAR-2.25).png',
   'TAZASTAR-4.5': '/assets/Prescription Drugs/Piperacillin + Tazobactam (TAZASTAR-4.5).png',
   RANEXSTAR: '/assets/Prescription Drugs/Tranexamic Acid (RANEXSTAR).png',
