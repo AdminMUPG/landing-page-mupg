@@ -14,11 +14,6 @@ interface BentoItem {
 }
 
 export const createTwostarBentoItems = (): BentoItem[] => {
-  const totalPartners =
-    companyData.clients.private.length +
-    companyData.clients.government.length +
-    companyData.clients.localGovtUnits.length;
-
   const anesthesiaCount = products.filter(p => p.category === 'ANESTHESIA').length;
   const prescriptionCount = products.filter(p => p.category === 'PRESCRIPTION_DRUGS').length;
   const suppliesCount = products.filter(p => p.category === 'MEDICAL_SUPPLIES').length;
