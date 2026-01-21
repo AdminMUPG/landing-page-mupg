@@ -259,10 +259,10 @@ export const createTwostarBentoItems = (): BentoItem[] => {
       rowSpan: 'row-span-1',
       header: (
         <p className="text-xs font-bold tracking-[0.25em] uppercase text-[#B7791F]">
-          TSP GROUP
+          MEDICA UNO PHARMA GROUP
         </p>
       ),
-      title: 'TSP Group',
+      title: 'Medica Uno Pharma Group',
       description: (
         <div className="space-y-1 text-sm text-slate-600">
           <div className="text-5xl font-bold text-slate-900 leading-none">3</div>
