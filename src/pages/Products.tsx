@@ -9,7 +9,7 @@ import Pill from '../components/Pill';
 import { products, productCategories } from '../data/tsp';
 import { getProductImage } from '../utils/imageMap';
 
-type CategoryFilter = 'ALL' | 'ANESTHESIA' | 'PRESCRIPTION_DRUGS' | 'MEDICAL_SUPPLIES' | 'FOOD_SUPPLEMENTS';
+type CategoryFilter = 'ALL' | 'PHARMACEUTICALS' | 'MEDICAL_SUPPLIES' | 'FOOD_SUPPLEMENTS';
 
 export default function Products() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -20,15 +20,14 @@ export default function Products() {
 
   useEffect(() => {
     const categoryParam = searchParams.get('category') as CategoryFilter;
-    if (categoryParam && ['ALL', 'ANESTHESIA', 'PRESCRIPTION_DRUGS', 'MEDICAL_SUPPLIES', 'FOOD_SUPPLEMENTS'].includes(categoryParam)) {
+    if (categoryParam && ['ALL', 'PHARMACEUTICALS', 'MEDICAL_SUPPLIES', 'FOOD_SUPPLEMENTS'].includes(categoryParam)) {
       setActiveCategory(categoryParam);
     }
   }, [searchParams]);
 
   const tabs = [
     { id: 'ALL', label: 'All' },
-    { id: 'ANESTHESIA', label: 'Anesthesia' },
-    { id: 'PRESCRIPTION_DRUGS', label: 'Prescription Drugs' },
+    { id: 'PHARMACEUTICALS', label: 'Pharmaceuticals' },
     { id: 'MEDICAL_SUPPLIES', label: 'Medical Supplies/Device' },
     { id: 'FOOD_SUPPLEMENTS', label: 'Upcoming Food Supplements' }
   ];

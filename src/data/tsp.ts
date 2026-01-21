@@ -38,7 +38,7 @@ export interface Product {
   id: string;
   name: string;
   brandCode?: string;
-  category: 'ANESTHESIA' | 'PRESCRIPTION_DRUGS' | 'MEDICAL_SUPPLIES' | 'FOOD_SUPPLEMENTS';
+  category: 'PHARMACEUTICALS' | 'MEDICAL_SUPPLIES' | 'FOOD_SUPPLEMENTS';
 }
 
 export const companyData: Company = {
@@ -150,21 +150,19 @@ export const companyData: Company = {
 };
 
 export const products: Product[] = [
-  // ANESTHESIA
-  { id: '1', name: 'Atracurium Besilate', brandCode: 'ATRACARE-STAR', category: 'ANESTHESIA' },
-  { id: '2', name: 'Bupivacaine HCl', brandCode: 'BUPISTAR', category: 'ANESTHESIA' },
-  { id: '3', name: 'Propofol', brandCode: 'XYFOL', category: 'ANESTHESIA' },
-  { id: '4', name: 'Propofol', brandCode: 'PROFOSTAR', category: 'ANESTHESIA' },
-  { id: '5', name: 'Sevoflurane', brandCode: 'SEVOTANE', category: 'ANESTHESIA' },
-  
-  // PRESCRIPTION DRUGS
-  { id: '6', name: 'Hydrocortisone (as sodium succinate) 100mg', category: 'PRESCRIPTION_DRUGS' },
-  { id: '7', name: 'Norepinephrine', brandCode: 'NOREPHSTAR', category: 'PRESCRIPTION_DRUGS' },
-  { id: '8', name: 'Paracetamol', brandCode: 'CETASTAR', category: 'PRESCRIPTION_DRUGS' },
-  { id: '9', name: 'Piperacillin + Tazobactam', brandCode: 'TAZASTAR-2.25', category: 'PRESCRIPTION_DRUGS' },
-  { id: '10', name: 'Piperacillin + Tazobactam', brandCode: 'TAZASTAR-4.5', category: 'PRESCRIPTION_DRUGS' },
-  { id: '11', name: 'Tranexamic Acid', brandCode: 'RANEXSTAR', category: 'PRESCRIPTION_DRUGS' },
-  { id: '12', name: 'Sugammadex', brandCode: 'GADEX-STAR', category: 'PRESCRIPTION_DRUGS' },
+  // PHARMACEUTICALS (formerly Anesthesia and Prescription Drugs)
+  { id: '1', name: 'Atracurium Besilate', brandCode: 'ATRACARE-STAR', category: 'PHARMACEUTICALS' },
+  { id: '2', name: 'Bupivacaine HCl', brandCode: 'BUPISTAR', category: 'PHARMACEUTICALS' },
+  { id: '3', name: 'Propofol', brandCode: 'XYFOL', category: 'PHARMACEUTICALS' },
+  { id: '4', name: 'Propofol', brandCode: 'PROFOSTAR', category: 'PHARMACEUTICALS' },
+  { id: '5', name: 'Sevoflurane', brandCode: 'SEVOTANE', category: 'PHARMACEUTICALS' },
+  { id: '6', name: 'Hydrocortisone (as sodium succinate) 100mg', category: 'PHARMACEUTICALS' },
+  { id: '7', name: 'Norepinephrine', brandCode: 'NOREPHSTAR', category: 'PHARMACEUTICALS' },
+  { id: '8', name: 'Paracetamol', brandCode: 'CETASTAR', category: 'PHARMACEUTICALS' },
+  { id: '9', name: 'Piperacillin + Tazobactam', brandCode: 'TAZASTAR-2.25', category: 'PHARMACEUTICALS' },
+  { id: '10', name: 'Piperacillin + Tazobactam', brandCode: 'TAZASTAR-4.5', category: 'PHARMACEUTICALS' },
+  { id: '11', name: 'Tranexamic Acid', brandCode: 'RANEXSTAR', category: 'PHARMACEUTICALS' },
+  { id: '12', name: 'Sugammadex', brandCode: 'GADEX-STAR', category: 'PHARMACEUTICALS' },
   
   // MEDICAL SUPPLIES/DEVICE
   { id: '13', name: 'Sevoflurane Vaporizer Machine and Adaptor', category: 'MEDICAL_SUPPLIES' },
@@ -181,8 +179,7 @@ export const products: Product[] = [
 ];
 
 export const productCategories = {
-  ANESTHESIA: 'Anesthesia',
-  PRESCRIPTION_DRUGS: 'Prescription Drugs',
+  PHARMACEUTICALS: 'Pharmaceuticals',
   MEDICAL_SUPPLIES: 'Medical Supplies/Device',
   FOOD_SUPPLEMENTS: 'Upcoming Food Supplements'
 };

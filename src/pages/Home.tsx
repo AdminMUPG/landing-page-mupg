@@ -347,8 +347,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
           {[
-            { category: 'ANESTHESIA', icon: Stethoscope, count: products.filter(p => p.category === 'ANESTHESIA').length },
-            { category: 'PRESCRIPTION_DRUGS', icon: Package, count: products.filter(p => p.category === 'PRESCRIPTION_DRUGS').length },
+            { category: 'PHARMACEUTICALS', icon: Stethoscope, count: products.filter(p => p.category === 'PHARMACEUTICALS').length },
             { category: 'MEDICAL_SUPPLIES', icon: Building2, count: products.filter(p => p.category === 'MEDICAL_SUPPLIES').length },
             { category: 'FOOD_SUPPLEMENTS', icon: Heart, count: products.filter(p => p.category === 'FOOD_SUPPLEMENTS').length }
           ].map(({ category, icon: Icon, count }) => (
