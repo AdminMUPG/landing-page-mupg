@@ -204,34 +204,6 @@ export default function About() {
         </div>
       </Section>
 
-      {/* Founders / Leadership */}
-      <Section className="bg-slate-50">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Leadership</h2>
-          <p className="text-lg text-slate-600">The people behind Twostar Pharmaceutical</p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {companyData.founders.map((founder, index) => (
-            <Card key={index} hover>
-              <div className="text-center space-y-4">
-                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-[#E6A91E]">
-                  <ImagePlaceholder
-                    src={founder.photo || '/assets/Group Picture/Pic 1.jpg'}
-                    alt={founder.name}
-                    aspectRatio="square"
-                    objectFit="cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-1">{founder.name}</h3>
-                  <p className="text-slate-600">{founder.role}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </div>
-      </Section>
-
       {/* Future Plans */}
       <Section>
         <div className="text-center mb-12">
