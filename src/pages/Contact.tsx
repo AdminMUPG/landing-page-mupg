@@ -237,7 +237,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4 text-primary-600" />
-                  <span>twostarpharmatrading@gmail.com</span>
+                  <span>medicaunopharmagroup@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4 text-primary-600" />

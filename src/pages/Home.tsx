@@ -43,21 +43,21 @@ export default function Home() {
       role: 'Chief Pharmacist',
       company: 'Private Hospital Network',
       image: '/assets/Group Picture/Pic 1.jpg',
-      text: 'Twostar Pharmaceutical has been a reliable partner in ensuring our hospital has consistent access to high-quality anesthesia and prescription medicines. Their ethical marketing approach and commitment to service excellence make them stand out.',
+      text: 'Medica Uno has been a reliable partner in ensuring our hospital has consistent access to high-quality anesthesia and prescription medicines. Their ethical marketing approach and commitment to service excellence make them stand out.',
     },
     {
       name: 'Hospital Administrator',
       role: 'Administrator',
       company: 'Government Hospital',
       image: '/assets/Group Picture/Pic 4.jpg',
-      text: 'Working with Twostar has streamlined our pharmaceutical procurement process. Their distribution network is efficient, and their team is always responsive to our needs. Highly recommended for government healthcare institutions.',
+      text: 'Working with Medica Uno has streamlined our pharmaceutical procurement process. Their distribution network is efficient, and their team is always responsive to our needs. Highly recommended for government healthcare institutions.',
     },
     {
       name: 'LGU Health Officer',
       role: 'Health Officer',
       company: 'Local Government Unit',
       image: '/assets/Group Picture/Pic 5.jpg',
-      text: 'Twostar Pharmaceutical has been instrumental in helping us provide accessible healthcare to our community. Their commitment to affordable, quality medicines aligns perfectly with our mission to serve the public.',
+      text: 'Medica Uno has been instrumental in helping us provide accessible healthcare to our community. Their commitment to affordable, quality medicines aligns perfectly with our mission to serve the public.',
     }
   ];
 
