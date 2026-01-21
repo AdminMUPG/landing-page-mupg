@@ -156,32 +156,51 @@ export const companyData: Company = {
 };
 
 export const products: Product[] = [
-  // PHARMACEUTICALS (formerly Anesthesia and Prescription Drugs)
-  { id: '1', name: 'Atracurium Besilate', brandCode: 'ATRACARE-STAR', category: 'PHARMACEUTICALS' },
-  { id: '2', name: 'Bupivacaine HCl', brandCode: 'BUPISTAR', category: 'PHARMACEUTICALS' },
-  { id: '3', name: 'Propofol', brandCode: 'XYFOL', category: 'PHARMACEUTICALS' },
-  { id: '4', name: 'Propofol', brandCode: 'PROFOSTAR', category: 'PHARMACEUTICALS' },
-  { id: '5', name: 'Sevoflurane', brandCode: 'SEVOTANE', category: 'PHARMACEUTICALS' },
-  { id: '6', name: 'Hydrocortisone (as sodium succinate) 100mg', category: 'PHARMACEUTICALS' },
-  { id: '7', name: 'Norepinephrine', brandCode: 'NOREPHSTAR', category: 'PHARMACEUTICALS' },
-  { id: '8', name: 'Paracetamol', brandCode: 'CETASTAR', category: 'PHARMACEUTICALS' },
-  { id: '9', name: 'Piperacillin + Tazobactam', brandCode: 'TAZASTAR-2.25', category: 'PHARMACEUTICALS' },
-  { id: '10', name: 'Piperacillin + Tazobactam', brandCode: 'TAZASTAR-4.5', category: 'PHARMACEUTICALS' },
-  { id: '11', name: 'Tranexamic Acid', brandCode: 'RANEXSTAR', category: 'PHARMACEUTICALS' },
-  { id: '12', name: 'Sugammadex', brandCode: 'GADEX-STAR', category: 'PHARMACEUTICALS' },
-  
+  // MUF products first
+  { id: '1', name: 'Hydrocortisone', brandCode: 'MUFCORT', category: 'PHARMACEUTICALS' },
+  { id: '2', name: 'Mufitek', brandCode: 'MUFITEK', category: 'FOOD_SUPPLEMENTS' },
+  { id: '3', name: 'Mufisitol', brandCode: 'MUFISITOL', category: 'FOOD_SUPPLEMENTS' },
+
+  // Products with STAR at the end of the brand code
+  { id: '4', name: 'Atracurium Besilate', brandCode: 'ATRACARE-STAR', category: 'PHARMACEUTICALS' },
+  {
+    id: '5',
+    name: 'Bupivacaine HCl in 8% Dextrose',
+    brandCode: 'BUPISTAR',
+    category: 'PHARMACEUTICALS'
+  },
+  { id: '6', name: 'Sugammadex', brandCode: 'GADEX-STAR', category: 'PHARMACEUTICALS' },
+  { id: '7', name: 'Tranexamic Acid', brandCode: 'RANEXSTAR', category: 'PHARMACEUTICALS' },
+  { id: '8', name: 'Norepinephrine', brandCode: 'NOREPHSTAR', category: 'PHARMACEUTICALS' },
+  { id: '9', name: 'Paracetamol', brandCode: 'CETASTAR', category: 'PHARMACEUTICALS' },
+  { id: '10', name: 'Propofol', brandCode: 'PROFOSTAR', category: 'PHARMACEUTICALS' },
+  {
+    id: '11',
+    name: 'Piperacillin + Tazobactam',
+    brandCode: 'TAZASTAR-4.5',
+    category: 'PHARMACEUTICALS'
+  },
+  {
+    id: '12',
+    name: 'Piperacillin + Tazobactam',
+    brandCode: 'TAZASTAR-2.25',
+    category: 'PHARMACEUTICALS'
+  },
+
+  // Remaining pharmaceuticals
+  { id: '13', name: 'Propofol', brandCode: 'XYFOL', category: 'PHARMACEUTICALS' },
+  { id: '14', name: 'Sevoflurane', brandCode: 'SEVOTANE', category: 'PHARMACEUTICALS' },
+
   // MEDICAL SUPPLIES/DEVICE
-  { id: '13', name: 'Sevoflurane Vaporizer Machine and Adaptor', category: 'MEDICAL_SUPPLIES' },
-  { id: '14', name: 'Hospital Supplies: Syringes, Gloves', category: 'MEDICAL_SUPPLIES' },
+  { id: '15', name: 'Sevoflurane Vaporizer Machine and Adaptor', category: 'MEDICAL_SUPPLIES' },
+  { id: '16', name: 'Hospital Supplies: Syringes, Gloves', category: 'MEDICAL_SUPPLIES' },
   // Temporarily hidden
-  // { id: '15', name: 'Laboratory and Diagnostics', category: 'MEDICAL_SUPPLIES' },
-  // { id: '16', name: 'Orthopedic Supplies', category: 'MEDICAL_SUPPLIES' },
-  
-  // UPCOMING FOOD SUPPLEMENTS
-  { id: '17', name: 'Mufitek', brandCode: 'MUFITEK', category: 'FOOD_SUPPLEMENTS' },
-  { id: '18', name: 'Ercemed', brandCode: 'ERCEMED-2B', category: 'FOOD_SUPPLEMENTS' },
-  { id: '19', name: 'Ercemed', brandCode: 'ERCEMED-4B', category: 'FOOD_SUPPLEMENTS' },
-  { id: '20', name: 'Mufisitol', brandCode: 'MUFISITOL', category: 'FOOD_SUPPLEMENTS' }
+  // { id: '17', name: 'Laboratory and Diagnostics', category: 'MEDICAL_SUPPLIES' },
+  // { id: '18', name: 'Orthopedic Supplies', category: 'MEDICAL_SUPPLIES' },
+
+  // UPCOMING FOOD SUPPLEMENTS (remaining)
+  { id: '17', name: 'Ercemed', brandCode: 'ERCEMED-2B', category: 'FOOD_SUPPLEMENTS' },
+  { id: '18', name: 'Ercemed', brandCode: 'ERCEMED-4B', category: 'FOOD_SUPPLEMENTS' }
 ];
 
 export const productCategories = {

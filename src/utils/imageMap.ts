@@ -1,9 +1,9 @@
 // Map product brand codes and product names to their image paths
 // Using the new structured folders under /public/assets
 export const productImageMap: Record<string, string> = {
-  // Anesthesia (brand codes)
-  'ATRACARE-STAR': '/assets/Anesthesia/Atracurium Besilate (ATRACARE-STAR).png',
-  BUPISTAR: '/assets/Anesthesia/Bupivacaine HCl (BUPISTAR).png',
+  // Anesthesia / Pharmaceuticals (brand codes)
+  'ATRACARE-STAR': '/assets/Pharmaceuticals/Atracare-star.jpg',
+  BUPISTAR: '/assets/Pharmaceuticals/Bupistar.jpg',
   XYFOL: '/assets/Anesthesia/Propofol (XYFOL).png',
   PROFOSTAR: '/assets/Pharmaceuticals/General Anesthetic/PROFOSTAR (1).png',
   SEVOTANE: '/assets/Anesthesia/Sevoflurane (SEVOTANE).png',
@@ -12,9 +12,10 @@ export const productImageMap: Record<string, string> = {
   NOREPHSTAR: '/assets/Pharmaceuticals/Emergency Medicine/Copy of NOREPHSTAR AMPULE.PNG',
   CETASTAR: '/assets/Pharmaceuticals/For Pain/Copy of CETASTAR.jpg',
   'TAZASTAR-2.25': '/assets/Prescription Drugs/Piperacillin + Tazobactam (TAZASTAR-2.25).png',
-  'TAZASTAR-4.5': '/assets/Prescription Drugs/Piperacillin + Tazobactam (TAZASTAR-4.5).png',
+  'TAZASTAR-4.5': '/assets/Pharmaceuticals/Tazatar 4.5.jpg',
   RANEXSTAR: '/assets/Pharmaceuticals/Antifibrinolytic/RANEXSTAR.jpg',
-  'GADEX-STAR': '/assets/Prescription Drugs/Sugammadex (GADEX-STAR).png',
+  'GADEX-STAR': '/assets/Pharmaceuticals/Gadex Star.jpg',
+  MUFCORT: '/assets/Pharmaceuticals/Corticosteroid/MUFCORT (3).png',
 
   // Food Supplements (brand codes)
   MUFITEK: '/assets/Upcoming Food Supplements/MUFITEK.JPG',
