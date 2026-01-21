@@ -20,6 +20,18 @@ export interface Company {
     government: string[];
     localGovtUnits: string[];
   };
+  whoWeAre: string;
+  founders: {
+    name: string;
+    role: string;
+    photo?: string;
+  }[];
+  timeline: {
+    year: string;
+    event: string;
+  }[];
+  futurePlans: string[];
+  certifications: string[];
 }
 
 export interface Product {
@@ -40,6 +52,7 @@ export const companyData: Company = {
     'Service & Reliability',
     'Passion & Persistence'
   ],
+  whoWeAre: 'Twostar Pharmaceutical Trading (TSP) is a 100% Filipino-owned pharmaceutical company committed to improving healthcare access in the Philippines. We specialize in the distribution, marketing, and importation of branded and generic pharmaceutical products, with a particular focus on anesthesia and prescription medicines. Our extensive network enables us to serve healthcare institutions nationwide—from major hospitals to local government health centers—ensuring that essential medicines reach those who need them most.',
   locations: {
     warehouse: 'Rizal',
     satelliteOffice: 'Quezon City'
@@ -100,7 +113,40 @@ export const companyData: Company = {
       'Municipality of Occidental Mindoro',
       'Municipality of Cavite City, Cavite'
     ]
-  }
+  },
+  founders: [
+    {
+      name: 'Jolah B. Hernaez',
+      role: 'President, Head of Finance',
+      photo: '/assets/Group Picture/Pic 1.jpg' // Placeholder - replace with actual photo
+    },
+    {
+      name: 'Leonard C. Hernaez',
+      role: 'Vice President, National Sales Manager',
+      photo: '/assets/Group Picture/Pic 4.jpg' // Placeholder - replace with actual photo
+    }
+  ],
+  timeline: [
+    {
+      year: '2019',
+      event: 'Twostar Pharmaceutical Trading (TSP) established, focusing on distribution and marketing of pharmaceutical products'
+    },
+    {
+      year: '2022',
+      event: 'Medica Uno Farma (MUF) established, expanding operations to include importation and distribution'
+    }
+  ],
+  futurePlans: [
+    'Grow medicines supply to government programs',
+    'Expand wholesale network across the Philippines',
+    'Strengthen importer and distributor role in the pharmaceutical industry',
+    'Possible expansion into medical devices and equipment'
+  ],
+  certifications: [
+    'FDA Registered Products',
+    'GMP Certified',
+    'Certified Distributor'
+  ]
 };
 
 export const products: Product[] = [
@@ -123,8 +169,9 @@ export const products: Product[] = [
   // MEDICAL SUPPLIES/DEVICE
   { id: '13', name: 'Sevoflurane Vaporizer Machine and Adaptor', category: 'MEDICAL_SUPPLIES' },
   { id: '14', name: 'Hospital Supplies: Syringes, Gloves', category: 'MEDICAL_SUPPLIES' },
-  { id: '15', name: 'Laboratory and Diagnostics', category: 'MEDICAL_SUPPLIES' },
-  { id: '16', name: 'Orthopedic Supplies', category: 'MEDICAL_SUPPLIES' }
+  // Temporarily hidden
+  // { id: '15', name: 'Laboratory and Diagnostics', category: 'MEDICAL_SUPPLIES' },
+  // { id: '16', name: 'Orthopedic Supplies', category: 'MEDICAL_SUPPLIES' }
 ];
 
 export const productCategories = {

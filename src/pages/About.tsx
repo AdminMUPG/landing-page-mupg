@@ -1,4 +1,4 @@
-import { CheckCircle, Building2, MapPin } from 'lucide-react';
+import { CheckCircle, Building2, MapPin, Calendar, Target } from 'lucide-react';
 import Section from '../components/Section';
 import Card from '../components/Card';
 import ImagePlaceholder from '../components/ImagePlaceholder';
@@ -176,8 +176,85 @@ export default function About() {
         </div>
       </Section>
 
-      {/* Clients */}
+      {/* Company History / Timeline */}
       <Section>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Company History</h2>
+          <p className="text-lg text-slate-600">Our journey in the Philippine pharmaceutical industry</p>
+        </div>
+        <div className="max-w-4xl mx-auto space-y-6">
+          {companyData.timeline.map((item, index) => (
+            <Card key={index} className="relative pl-12">
+              <div className="absolute left-6 top-6 w-3 h-3 bg-[#E6A91E] rounded-full border-4 border-white shadow-lg"></div>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-[#0F253A] rounded-xl flex items-center justify-center">
+                    <Calendar className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-2">
+                    <h3 className="text-2xl font-bold text-[#E6A91E]">{item.year}</h3>
+                  </div>
+                  <p className="text-slate-600 leading-relaxed">{item.event}</p>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Founders / Leadership */}
+      <Section className="bg-slate-50">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Leadership</h2>
+          <p className="text-lg text-slate-600">The people behind Twostar Pharmaceutical</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {companyData.founders.map((founder, index) => (
+            <Card key={index} hover>
+              <div className="text-center space-y-4">
+                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-[#E6A91E]">
+                  <ImagePlaceholder
+                    src={founder.photo || '/assets/Group Picture/Pic 1.jpg'}
+                    alt={founder.name}
+                    aspectRatio="square"
+                    objectFit="cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-1">{founder.name}</h3>
+                  <p className="text-slate-600">{founder.role}</p>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Future Plans */}
+      <Section>
+        <div className="text-center mb-12">
+          <div className="w-16 h-16 bg-gradient-to-br from-[#0F253A] to-[#B01E1E] rounded-xl flex items-center justify-center mx-auto mb-4">
+            <Target className="w-8 h-8 text-white" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Future Plans</h2>
+          <p className="text-lg text-slate-600">Our vision for growth and expansion</p>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-4">
+            {companyData.futurePlans.map((plan, index) => (
+              <Card key={index} className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-[#E6A91E] flex-shrink-0 mt-0.5" />
+                <p className="text-slate-700 text-lg">{plan}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* Clients */}
+      <Section className="bg-slate-50">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Clients</h2>
           <p className="text-lg text-slate-600">Trusted by healthcare institutions across the Philippines</p>

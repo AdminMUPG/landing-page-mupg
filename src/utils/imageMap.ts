@@ -5,7 +5,7 @@ export const productImageMap: Record<string, string> = {
   'ATRACARE-STAR': '/assets/Anesthesia/Atracurium Besilate (ATRACARE-STAR).png',
   BUPISTAR: '/assets/Anesthesia/Bupivacaine HCl (BUPISTAR).png',
   XYFOL: '/assets/Anesthesia/Propofol (XYFOL).png',
-  PROFOSTAR: '/assets/Anesthesia/Propofol (XYFOL).png', // same product line image
+  PROFOSTAR: '/assets/Pharmaceuticals/General Anesthetic/PROFOSTAR (1).png',
   SEVOTANE: '/assets/Anesthesia/Sevoflurane (SEVOTANE).png',
 
   // Prescription drugs (brand codes)
@@ -33,7 +33,7 @@ export const imagePaths = {
   logo: '/assets/Logo/TSP-Official-LOGO.png',
   hero: '/assets/Group Picture/Pic 1.jpg',
   warehouse: '/assets/Warehouse and Office/Pic 2.jpg',
-  warehouseAlt: '/assets/Warehouse and Office/Pic 3.jpg',
+  warehouseAlt: '/assets/Warehouse and Office/Regalia.jpg',
   careers: '/assets/Group Picture/Pic 4.jpg',
   map: '/assets/Warehouse and Office/Regalia.jpg',
   groupPicture1: '/assets/Group Picture/Pic 1.jpg',

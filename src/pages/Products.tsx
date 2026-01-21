@@ -100,15 +100,20 @@ export default function Products() {
         {/* Products Grid */}
         {filteredProducts.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProducts.map((product) => (
+            {filteredProducts.map((product) => {
+              const isProfostar = product.brandCode === 'PROFOSTAR';
+              return (
               <Card key={product.id} hover>
                 <div className="space-y-4">
-                  <ImagePlaceholder 
-                    src={getProductImage(product.brandCode, product.name)} 
-                    alt={product.name}
-                    aspectRatio="square"
-                    objectFit="contain"
-                  />
+                  <div className={isProfostar ? 'aspect-[3/4] min-h-[400px]' : 'aspect-square'}>
+                    <ImagePlaceholder 
+                      src={getProductImage(product.brandCode, product.name)} 
+                      alt={product.name}
+                      aspectRatio="auto"
+                      objectFit="contain"
+                      className={isProfostar ? 'h-full w-full' : ''}
+                    />
+                  </div>
                   
                   <div>
                     <div className="flex items-start justify-between mb-2">
@@ -139,7 +144,8 @@ export default function Products() {
                   </div>
                 </div>
               </Card>
-            ))}
+            );
+            })}
           </div>
         ) : (
           <div className="text-center py-12">

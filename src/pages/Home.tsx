@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Building2, Package, Stethoscope, Shield } from 'lucide-react';
 import Section from '../components/Section';
 import FAQ from '../components/FAQ';
 import Testimonials from '../components/Testimonials';
 import MagicBento from '../components/MagicBento';
 import { createTwostarBentoItems } from '../data/tspBento';
 import DomeGallery from '../components/DomeGallery';
+import Card from '../components/Card';
+import ImagePlaceholder from '../components/ImagePlaceholder';
+import { companyData, products, productCategories } from '../data/tsp';
+import { imagePaths } from '../utils/imageMap';
 
 export default function Home() {
   // FAQ data
@@ -249,6 +253,167 @@ export default function Home() {
             className="max-w-6xl w-full"
             items={createTwostarBentoItems()}
           />
+        </div>
+      </Section>
+
+      {/* Who We Are Section */}
+      <Section className="bg-slate-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Text on Left */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                Who We Are
+              </h2>
+              <p className="text-lg text-slate-600 leading-relaxed">
+                {companyData.whoWeAre}
+              </p>
+            </div>
+            {/* Group Picture on Right */}
+            <div>
+              <ImagePlaceholder
+                src={imagePaths.groupPicture1}
+                alt="Twostar Pharmaceutical team"
+                aspectRatio="video"
+              />
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Services & Quality & Compliance Section */}
+      <Section>
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Our Services
+          </h2>
+          <p className="text-lg text-slate-600 mb-2">
+            Drug Distributor / Wholesaler / Importer
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+          <Card hover>
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-[#0F253A] rounded-xl flex items-center justify-center">
+                <Package className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900">Wholesale and Distribution</h3>
+              <p className="text-slate-600">
+                Efficient distribution network serving healthcare institutions nationwide. We ensure timely delivery and consistent supply of pharmaceutical products to hospitals, clinics, and pharmacies.
+              </p>
+            </div>
+          </Card>
+          <Card hover>
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-[#B01E1E] rounded-xl flex items-center justify-center">
+                <Stethoscope className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900">Ethical Marketing</h3>
+              <p className="text-slate-600">
+                Building strong relationships with healthcare professionals through ethical marketing practices. We provide product support and education to ensure proper use of our pharmaceutical solutions.
+              </p>
+            </div>
+          </Card>
+        </div>
+        
+        {/* Quality & Compliance */}
+        <div className="max-w-3xl mx-auto text-center mb-8">
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+            Quality & Compliance
+          </h3>
+          <p className="text-lg text-slate-600 mb-6">
+            Committed to the highest standards in pharmaceutical distribution
+          </p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+          {companyData.certifications.map((cert, index) => (
+            <Card key={index} className="flex items-center gap-3 px-6 py-4">
+              <Shield className="w-6 h-6 text-[#E6A91E]" />
+              <span className="font-semibold text-slate-900">{cert}</span>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Products Preview Section */}
+      <Section className="bg-slate-50">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Our Product Categories
+          </h2>
+          <p className="text-lg text-slate-600">
+            Comprehensive pharmaceutical solutions for healthcare professionals
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+          {[
+            { category: 'ANESTHESIA', icon: Stethoscope, count: products.filter(p => p.category === 'ANESTHESIA').length },
+            { category: 'PRESCRIPTION_DRUGS', icon: Package, count: products.filter(p => p.category === 'PRESCRIPTION_DRUGS').length },
+            { category: 'MEDICAL_SUPPLIES', icon: Building2, count: products.filter(p => p.category === 'MEDICAL_SUPPLIES').length }
+          ].map(({ category, icon: Icon, count }) => (
+            <Card key={category} hover>
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#0F253A] to-[#B01E1E] rounded-xl flex items-center justify-center mx-auto">
+                  <Icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900">
+                  {productCategories[category as keyof typeof productCategories]}
+                </h3>
+                <p className="text-slate-600 text-sm">
+                  {count} products available
+                </p>
+              </div>
+            </Card>
+          ))}
+        </div>
+        <div className="text-center">
+          <Link
+            to="/products"
+            className="inline-flex items-center gap-2 bg-[#0F253A] text-white px-8 py-3 rounded-lg hover:bg-[#1a3a52] transition-colors font-medium"
+          >
+            See Full Catalog
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </Section>
+
+      {/* Facilities Section */}
+      <Section className="bg-slate-50">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Our Facilities
+          </h2>
+          <p className="text-lg text-slate-600">
+            Strategically located facilities for efficient nationwide distribution
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <Card>
+            <div className="space-y-4">
+              <ImagePlaceholder
+                src={imagePaths.warehouse}
+                alt="Warehouse in Rizal"
+                aspectRatio="video"
+              />
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Warehouse</h3>
+                <p className="text-slate-600">{companyData.locations.warehouse}</p>
+              </div>
+            </div>
+          </Card>
+          <Card>
+            <div className="space-y-4">
+              <ImagePlaceholder
+                src={imagePaths.warehouseAlt}
+                alt="Satellite Office in Quezon City"
+                aspectRatio="video"
+              />
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Satellite Office</h3>
+                <p className="text-slate-600">{companyData.locations.satelliteOffice}</p>
+              </div>
+            </div>
+          </Card>
         </div>
       </Section>
 
