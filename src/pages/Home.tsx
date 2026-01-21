@@ -345,7 +345,7 @@ export default function Home() {
             Comprehensive pharmaceutical solutions for healthcare professionals
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
           {[
             { category: 'PHARMACEUTICALS', icon: Stethoscope, count: products.filter(p => p.category === 'PHARMACEUTICALS').length },
             { category: 'MEDICAL_SUPPLIES', icon: Building2, count: products.filter(p => p.category === 'MEDICAL_SUPPLIES').length },
