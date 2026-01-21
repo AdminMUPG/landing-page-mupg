@@ -268,7 +268,7 @@ export const createTwostarBentoItems = (): BentoItem[] => {
           <div className="text-5xl font-bold text-slate-900 leading-none">3</div>
           <p className="mt-2 text-sm text-slate-600">Companies</p>
           <p className="text-xs text-slate-500">
-            Uno + Twostar + Biomef
+            Medica Uno Farma + Two Star + Biomed
           </p>
           <p className="text-xs text-slate-500 mt-2">
             Importation and distribution of generic pharmaceuticals, food supplements, and medical devices
