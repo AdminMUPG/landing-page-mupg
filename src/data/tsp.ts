@@ -54,8 +54,8 @@ export const companyData: Company = {
   ],
   whoWeAre: 'Medica Uno Farma Int\'l Traders Corp. is a 100% Filipino-owned pharmaceutical company committed to improving healthcare access in the Philippines. We specialize in the importation, distribution, and marketing of branded and generic pharmaceutical products, with a particular focus on anesthesia and prescription medicines. Our extensive network enables us to serve healthcare institutions nationwide—from major hospitals to local government health centers—ensuring that essential medicines reach those who need them most.',
   locations: {
-    warehouse: 'Rodriguez, Rizal',
-    satelliteOffice: 'TSP Bldg., PH1, B5, Lot 1-2, Amityville Subd., San Jose, Rodriguez, Rizal'
+    warehouse: 'TSP Bldg., PH1, B5, Lot 1-2, Amityville Subd., San Jose, Rodriguez, Rizal',
+    satelliteOffice: 'Quezon City, Metro Manila'
   },
   groupOfCompanies: [
     {
