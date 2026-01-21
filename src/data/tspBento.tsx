@@ -71,16 +71,14 @@ export const createTwostarBentoItems = (): BentoItem[] => {
           <p className="mt-2 text-sm text-slate-600">
             Active healthcare partners
           </p>
+          <p className="mt-3 text-xs text-slate-600">
+            Working with hospitals, government institutions, local government units, and pharmacy/wholesale networks across the Philippines.
+          </p>
           <div className="mt-3 flex flex-wrap gap-1.5 text-xs text-slate-600">
-            <span className="px-2 py-1 rounded-md bg-slate-100">
-              {companyData.clients.private.length} Private
-            </span>
-            <span className="px-2 py-1 rounded-md bg-slate-100">
-              {companyData.clients.government.length} Government
-            </span>
-            <span className="px-2 py-1 rounded-md bg-slate-100">
-              {companyData.clients.localGovtUnits.length} LGU
-            </span>
+            <span className="px-2 py-1 rounded-md bg-slate-100">Private hospitals</span>
+            <span className="px-2 py-1 rounded-md bg-slate-100">Government hospitals</span>
+            <span className="px-2 py-1 rounded-md bg-slate-100">LGUs / health centers</span>
+            <span className="px-2 py-1 rounded-md bg-slate-100">Pharmacies & wholesalers</span>
           </div>
         </div>
       )
