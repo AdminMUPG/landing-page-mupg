@@ -63,12 +63,12 @@ export default function About() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <ImagePlaceholder
-              src="/assets/Warehouse and Office/Pic 2.jpg"
+              src="/assets/Warehouse and Office/warehouse.jpg"
               alt="Warehouse operations"
               aspectRatio="video"
             />
             <ImagePlaceholder
-              src="/assets/Warehouse and Office/Pic 3.jpg"
+              src="/assets/Warehouse and Office/warehouse 2.jpg"
               alt="Warehouse and storage area"
               aspectRatio="video"
             />

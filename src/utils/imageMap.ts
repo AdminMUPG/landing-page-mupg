@@ -11,7 +11,7 @@ export const productImageMap: Record<string, string> = {
   // Prescription drugs (brand codes)
   NOREPHSTAR: '/assets/Pharmaceuticals/Emergency Medicine/Copy of NOREPHSTAR AMPULE.PNG',
   CETASTAR: '/assets/Pharmaceuticals/For Pain/Copy of CETASTAR.jpg',
-  'TAZASTAR-2.25': '/assets/Prescription Drugs/Piperacillin + Tazobactam (TAZASTAR-2.25).png',
+  'TAZASTAR-2.25': '/assets/Pharmaceuticals/Tazatar 2.25.jpg',
   'TAZASTAR-4.5': '/assets/Pharmaceuticals/Tazatar 4.5.jpg',
   RANEXSTAR: '/assets/Pharmaceuticals/Antifibrinolytic/RANEXSTAR.jpg',
   'GADEX-STAR': '/assets/Pharmaceuticals/Gadex Star.jpg',
